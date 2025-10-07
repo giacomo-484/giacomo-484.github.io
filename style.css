@@ -1,8 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #fffdf7;
     color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header {
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.title {
+    font-size: 80px;
+}
+
+.intro-box {
+    background-color: #fbeee0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 header {
@@ -16,8 +49,8 @@ nav {
     background-color: #e74c3c;
     padding: 10px;
     text-align: center;
+    width: 100%;
 }
-
 nav a {
     color: white;
     margin: 0 15px;
@@ -27,8 +60,10 @@ nav a {
 
 .container {
     padding: 20px;
+    padding-bottom: 80px;
     max-width: 1200px;
     margin: auto;
+    width: 100%;
 }
 
 .featured-recipe {
@@ -82,10 +117,13 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .recipe-list {
         flex-direction: column;
