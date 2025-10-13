@@ -104,6 +104,22 @@ header {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.recipe-image-menu{
+    width: 30%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    object-fit: cover;
+    margin-left: 30%;
+    margin-top: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-image-menu:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 nav {
     background-color: #e74c3c;
     padding: 10px;
