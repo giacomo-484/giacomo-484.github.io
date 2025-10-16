@@ -41,17 +41,27 @@ body {
 
 .main-nav {
     display: flex;
-    gap: 15px;
+    gap: 40px; /* Maggiore spazio tra le voci */
     justify-content: center;
-    background-color: #240cac;
-    padding: 10px;
+    background-color: #e74c3c; /* Sfondo rosso */
+    padding: 15px 0;
 }
 
 .main-nav a {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+.main-nav a:hover {
+    background-color: #ffffff;
+    color: #e74c3c;
+    border-radius: 5px;
+}
+
 
 
 @media (max-width: 768px) {
