@@ -89,6 +89,9 @@ body {
     }
 }
 
+.h2-index{
+    font-family: 'Georgia', serif;
+}
 
 .title-wrapper {
     display: flex;
